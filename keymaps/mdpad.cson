@@ -1,0 +1,2 @@
+'atom-text-editor[data-grammar~=gfm]':
+  'ctrl-shift-j': 'mdpad:toggle'

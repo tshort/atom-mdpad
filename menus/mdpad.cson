@@ -1,0 +1,11 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'mdpad'
+      'submenu': [
+        { 'label': 'Toggle Preview', 'command': 'mdpad:toggle' }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "name": "mdpad",
+  "main": "./lib/mdpad",
+  "version": "0.1.0",
+  "description": "mdpad snippets and live preview.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tshort/atom-mdpad.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
+    "underscore-plus": "^1.6.6"
+  },
+  "readmeFilename": "README.md",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/mdpad-view.coffee",
+        "lib/mdpad.coffee"
+      ],
+      ".js": [
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore-min.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      ],
+      ".json": [
+        "node_modules/underscore-plus/node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "underscore-plus": "^1.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}
