@@ -1,11 +1,11 @@
 {
   "name": "mdpad",
   "main": "./lib/mdpad",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "mdpad snippets and live preview.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tshort/atom-mdpad.git"
+    "url": "https://github.com/tshort/atom-mdpad"
   },
   "license": "MIT",
   "engines": {
