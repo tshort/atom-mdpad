@@ -3,7 +3,7 @@
 Here is an example of an [mdpad](https://tshort.github.io/mdpad/)
 file where both the live preview and snippets are used.
 
-![mdpad in action](https://github.com/tshort/markdown-folder/raw/master/atom-mdpad.gif)
+![mdpad in action](https://github.com/tshort/atom-mdpad/raw/master/atom-mdpad.gif)
 
 
 ## Live preview
