@@ -1,7 +1,7 @@
 {
   "name": "mdpad",
   "main": "./lib/mdpad",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "mdpad snippets and live preview.",
   "repository": {
     "type": "git",
