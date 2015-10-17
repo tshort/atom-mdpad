@@ -98,7 +98,9 @@ class MdpadPreviewView extends ScrollView
     # Fix from @kwaak (https://github.com/webBoxio/atom-html-preview/issues/1/#issuecomment-49639162)
     # Allows for the use of relative resources (scripts, styles)
     iframe.setAttribute("sandbox", "allow-scripts allow-same-origin")
-    iframe.src = @getPath().replace(/(.*[\/\\])(.*\.md$)/i, '$1mdpad.html?$2')
+    iframe.src = @getPath().replace(/(.*[\/\\])(.*\.md$)/i,
+                                    '$1' + atom.config.get('mdpad.htmlBaseName') + 
+                                    '?$2')
     @html $ iframe
     # @trigger('atom-html-preview:html-changed')
     atom.commands.dispatch 'mdpad', 'html-changed'
