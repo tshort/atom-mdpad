@@ -31,7 +31,7 @@ class MdpadPreviewView extends ScrollView
           @subscribeToFilePath(filePath)
 
   serialize: ->
-    deserializer : 'AtomHtmlPreviewView'
+    deserializer : 'MdpadPreviewView'
     filePath     : @getPath()
     editorId     : @editorId
 
@@ -99,7 +99,7 @@ class MdpadPreviewView extends ScrollView
     # Allows for the use of relative resources (scripts, styles)
     iframe.setAttribute("sandbox", "allow-scripts allow-same-origin")
     iframe.src = @getPath().replace(/(.*[\/\\])(.*\.md$)/i,
-                                    '$1' + atom.config.get('mdpad.htmlBaseName') + 
+                                    '$1' + atom.config.get('mdpad.htmlBaseName') +
                                     '?$2')
     @html $ iframe
     # @trigger('atom-html-preview:html-changed')
