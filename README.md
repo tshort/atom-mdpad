@@ -21,7 +21,21 @@ This generally works as well as using a local server along with a browser. One
 situation that doesn't work is with Modelica models compiled with Emscripten.
 
 Also, note that in your mdpad.html file, all URLs must either be relative
-or direct. "Protocol-relative URLs" don't work.
+or direct. "Protocol-relative URLs" don't work. These are URLs that leave off
+`http:` or `https:`. This is also true of other resources like css files. For
+example, [this](http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css)
+css file includes a protocol-relative URL.
+
+Another alternative to the live preview is to use Atom to start a server. The
+[local-server-express](https://atom.io/packages/local-server-express) package
+works nicely for this. Once launched, this will open a browser. Enter a url
+something like:
+
+http://localhost:2000/mdpad.html?example.md
+
+You can also use the [Browser Plus](https://atom.io/packages/browser-plus)
+package to load this right in Atom. With the live refresh feature, it works much
+like the Live Preview.
 
 ## Snippets
 
